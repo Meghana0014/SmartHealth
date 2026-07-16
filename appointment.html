@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Appointments | SmartHealth</title>
+
+<link rel="stylesheet" href="css/appointment.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+📅 Doctor Appointment Manager
+</h1>
+
+
+
+<div class="appointment-box">
+
+
+<form id="appointmentForm">
+
+
+<label>
+Doctor Name
+</label>
+
+<input 
+type="text"
+id="doctor"
+placeholder="Enter doctor name"
+required
+>
+
+
+
+<label>
+Hospital / Clinic
+</label>
+
+<input 
+type="text"
+id="hospital"
+placeholder="Enter hospital name"
+required
+>
+
+
+
+<label>
+Appointment Date
+</label>
+
+<input 
+type="date"
+id="date"
+required
+>
+
+
+
+<label>
+Appointment Time
+</label>
+
+<input 
+type="time"
+id="time"
+required
+>
+
+
+
+<label>
+Notes
+</label>
+
+<textarea 
+id="notes"
+placeholder="Reason for visit">
+</textarea>
+
+
+
+<button type="submit">
+Add Appointment
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+
+<div class="list-box">
+
+
+<h2>
+Upcoming Appointments
+</h2>
+
+
+<ul id="appointmentList">
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="js/appointment.js"></script>
+
+
+</body>
+
+</html>
