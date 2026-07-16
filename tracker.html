@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Health Tracker | SmartHealth</title>
+
+<link rel="stylesheet" href="css/tracker.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+❤️ Health Tracker
+</h1>
+
+
+
+<div class="tracker-box">
+
+
+<form id="healthForm">
+
+
+<label>
+Weight (kg)
+</label>
+
+<input 
+type="number"
+id="weight"
+placeholder="Example: 70"
+required
+>
+
+
+
+<label>
+Height (cm)
+</label>
+
+<input 
+type="number"
+id="height"
+placeholder="Example: 175"
+required
+>
+
+
+
+<label>
+Water Intake (glasses)
+</label>
+
+<input 
+type="number"
+id="water"
+placeholder="Example: 8"
+required
+>
+
+
+
+<label>
+Sleep Hours
+</label>
+
+<input 
+type="number"
+id="sleep"
+placeholder="Example: 7"
+required
+>
+
+
+
+<label>
+Heart Rate (BPM)
+</label>
+
+<input 
+type="number"
+id="heart"
+placeholder="Example: 72"
+required
+>
+
+
+<button type="submit">
+
+Save Health Data
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+
+<div class="result-box">
+
+
+<h2>
+Current Health Status
+</h2>
+
+
+<p id="healthResult">
+No data available.
+</p>
+
+
+</div>
+
+
+
+
+<div class="history-box">
+
+
+<h2>
+Health History
+</h2>
+
+
+<ul id="historyList">
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="js/tracker.js"></script>
+
+
+</body>
+
+</html>
