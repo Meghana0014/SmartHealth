@@ -1,1 +1,1 @@
-console.log("SmartHealth is running...");
+console.log("SmartHealth website loaded successfully");
