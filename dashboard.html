@@ -103,14 +103,16 @@ Smart<span>Health</span>
 <header class="topbar">
 
 
-<h2>
-Good Morning, User 👋
+<h2 id="welcomeMessage">
+Good Morning 👋
 </h2>
 
 
 <div class="profile">
-   
-   🔔  👤
+
+    <button id="themeToggle">🌙</button>
+
+    🔔 👤
 
 </div>
 
@@ -132,13 +134,8 @@ Good Morning, User 👋
 ❤️ Heart Rate
 </h3>
 
-<h1>
-72
-</h1>
-
-<p>
-BPM
-</p>
+<h1 id="heartRate">--</h1>
+<p>BPM</p>
 
 </div>
 
@@ -150,9 +147,7 @@ BPM
 💧 Water Intake
 </h3>
 
-<h1>
-6
-</h1>
+<h1 id="waterIntake">--</h1>
 
 <p>
 Glasses
@@ -168,9 +163,7 @@ Glasses
 ⚖ Weight
 </h3>
 
-<h1>
-70
-</h1>
+<h1 id="weightValue">--</h1>
 
 <p>
 Kg
@@ -186,9 +179,7 @@ Kg
 😴 Sleep
 </h3>
 
-<h1>
-8
-</h1>
+<h1 id="sleepHours">--</h1>
 
 <p>
 Hours
@@ -210,26 +201,11 @@ Hours
 
 <div class="box">
 
-<h2>
-Today's Medicines
-</h2>
+    <h2>Today's Medicines</h2>
 
-<ul>
-
-<li>
-💊 Vitamin D - 8:00 AM
-</li>
-
-<li>
-💊 Tablet A - 2:00 PM
-</li>
-
-<li>
-💊 Medicine B - 9:00 PM
-</li>
-
-
-</ul>
+    <ul id="medicineSummary">
+        <li>No medicines added.</li>
+    </ul>
 
 </div>
 
@@ -238,33 +214,17 @@ Today's Medicines
 
 <div class="box">
 
-<h2>
-Upcoming Appointment
-</h2>
+    <h2>Upcoming Appointment</h2>
 
-
-<p>
-👨‍⚕️ Dr. Smith
-</p>
-
-<p>
-📅 Tomorrow, 10:00 AM
-</p>
-
+    <p id="appointmentSummary">
+        No appointment scheduled.
+    </p>
 
 </div>
-
-
 </section>
-
-
-
 </main>
-
-
 </div>
-
-
+<script src="js/dashboard.js"></script>
 
 </body>
 

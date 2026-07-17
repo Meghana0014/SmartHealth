@@ -184,3 +184,41 @@ margin:15px 0;
 list-style:none;
 
 }
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+#themeToggle{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#themeToggle:hover{
+    background:#1d4ed8;
+}
+
+body.dark{
+    background:#111827;
+    color:white;
+}
+
+body.dark .card,
+body.dark .box{
+    background:#1f2937;
+    color:white;
+}
+
+body.dark .topbar{
+    color:white;
+}
+
+body.dark .sidebar{
+    background:#0f172a;
+}
