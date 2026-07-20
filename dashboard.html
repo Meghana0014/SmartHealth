@@ -12,6 +12,9 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 
@@ -25,66 +28,103 @@
 
 <aside class="sidebar">
 
+
 <h2>
 Smart<span>Health</span>
 </h2>
 
 
+
 <ul>
 
+
 <li class="active">
-🏠 Dashboard
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i> Dashboard
+
+</a>
+
 </li>
 
+
+
 <li>
+
 <a href="profile.html">
-👤 Profile
+
+<i class="fa-solid fa-user"></i> Profile
+
 </a>
+
 </li>
+
+
+
 
 <li>
 
 <a href="medicine.html">
 
-💊 Medicines
+<i class="fa-solid fa-pills"></i> Medicines
 
 </a>
 
 </li>
+
+
+
 
 <li>
 
 <a href="appointment.html">
 
-📅 Appointments
+<i class="fa-solid fa-calendar-days"></i> Appointments
 
 </a>
 
 </li>
+
+
+
 
 <li>
 
 <a href="tracker.html">
 
-❤️ Health Tracker
+<i class="fa-solid fa-heart-pulse"></i> Health Tracker
 
 </a>
 
 </li>
+
+
+
 
 <li>
 
 <a href="analytics.html">
 
-📊 Analytics
+<i class="fa-solid fa-chart-line"></i> Analytics
 
 </a>
 
 </li>
 
+
+
+
 <li>
-⚙ Settings
+
+<a href="settings.html">
+
+<i class="fa-solid fa-gear"></i> Settings
+
+</a>
+
 </li>
+
 
 
 </ul>
@@ -94,25 +134,54 @@ Smart<span>Health</span>
 
 
 
+
+
 <!-- Main Content -->
 
 
 <main class="main-content">
 
 
+
 <header class="topbar">
 
 
 <h2 id="welcomeMessage">
+
 Good Morning 👋
+
 </h2>
+
+
 
 
 <div class="profile">
 
-    <button id="themeToggle">🌙</button>
 
-    🔔 👤
+<button id="themeToggle">
+
+🌙
+
+</button>
+
+
+
+<button class="icon-btn">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+
+
+
+<button class="icon-btn">
+
+<i class="fa-solid fa-user"></i>
+
+</button>
+
+
 
 </div>
 
@@ -122,73 +191,147 @@ Good Morning 👋
 
 
 
+
+
 <!-- Health Cards -->
+
 
 
 <section class="health-cards">
 
 
+
+
 <div class="card">
 
+
 <h3>
+
 ❤️ Heart Rate
+
 </h3>
 
-<h1 id="heartRate">--</h1>
-<p>BPM</p>
+
+<h1 id="heartRate">
+
+--
+
+</h1>
+
+
+<p>
+
+BPM
+
+</p>
+
 
 </div>
 
 
 
+
+
+
+
 <div class="card">
 
+
 <h3>
+
 💧 Water Intake
+
 </h3>
 
-<h1 id="waterIntake">--</h1>
+
+<h1 id="waterIntake">
+
+--
+
+</h1>
+
 
 <p>
+
 Glasses
+
 </p>
+
 
 </div>
 
 
 
+
+
+
+
+
 <div class="card">
 
+
 <h3>
+
 ⚖ Weight
+
 </h3>
 
-<h1 id="weightValue">--</h1>
+
+<h1 id="weightValue">
+
+--
+
+</h1>
+
 
 <p>
+
 Kg
+
 </p>
 
+
 </div>
+
+
+
+
 
 
 
 <div class="card">
 
+
 <h3>
+
 😴 Sleep
+
 </h3>
 
-<h1 id="sleepHours">--</h1>
+
+<h1 id="sleepHours">
+
+--
+
+</h1>
+
 
 <p>
+
 Hours
+
 </p>
 
+
 </div>
+
+
 
 
 </section>
+
+
+
 
 
 
@@ -196,36 +339,108 @@ Hours
 <!-- Bottom Sections -->
 
 
+
 <section class="dashboard-grid">
 
 
+
+
+
 <div class="box">
 
-    <h2>Today's Medicines</h2>
 
-    <ul id="medicineSummary">
-        <li>No medicines added.</li>
-    </ul>
+<h2>
+
+Today's Medicines
+
+</h2>
+
+
+
+<ul id="medicineSummary">
+
+
+<li>
+
+No medicines added.
+
+</li>
+
+
+</ul>
+
 
 </div>
 
 
 
 
+
+
+
 <div class="box">
 
-    <h2>Upcoming Appointment</h2>
 
-    <p id="appointmentSummary">
-        No appointment scheduled.
-    </p>
+<h2>
+
+Upcoming Appointment
+
+</h2>
+
+
+
+<p id="appointmentSummary">
+
+No appointment scheduled.
+
+</p>
+
+
 
 </div>
+
+
+
+
+
 </section>
+
+
+
+
+
+
+
+
+<footer class="dashboard-footer">
+
+
+<p>
+
+© 2026 SmartHealth Dashboard | Stay Healthy ❤️
+
+</p>
+
+
+</footer>
+
+
+
+
+
 </main>
+
+
 </div>
+
+
+
+
+
 <script src="js/dashboard.js"></script>
 
+
 </body>
+
 
 </html>

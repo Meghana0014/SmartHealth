@@ -1,24 +1,22 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 body{
-
-font-family:'Poppins',sans-serif;
-background:#f8fafc;
-
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    transition:0.3s;
 }
 
 
+/* Main Container */
 
 .dashboard-container{
-
-display:flex;
-min-height:100vh;
-
+    display:flex;
+    min-height:100vh;
 }
 
 
@@ -27,168 +25,89 @@ min-height:100vh;
 
 
 .sidebar{
-
-width:260px;
-background:#2563eb;
-color:white;
-padding:30px;
-
+    width:260px;
+    background:#2563eb;
+    color:white;
+    padding:30px;
 }
 
 
-
 .sidebar h2{
-
-font-size:28px;
-
+    font-size:28px;
 }
 
 
 .sidebar span{
-
-color:#bfdbfe;
-
+    color:#bfdbfe;
 }
 
 
-
 .sidebar ul{
-
-list-style:none;
-margin-top:40px;
-
+    list-style:none;
+    margin-top:40px;
 }
 
 
 .sidebar li{
-
-padding:15px;
-margin-bottom:10px;
-
-border-radius:10px;
-
-cursor:pointer;
-
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+    cursor:pointer;
 }
-
 
 
 .sidebar li:hover,
-.active{
+.sidebar .active{
+    background:#1d4ed8;
+}
 
-background:#1d4ed8;
 
+/* Sidebar Links */
+
+.sidebar a{
+    text-decoration:none;
+    color:white;
+    display:block;
+}
+
+
+.sidebar i{
+    margin-right:10px;
 }
 
 
 
-
-/* Main */
+/* Main Content */
 
 
 .main-content{
-
-flex:1;
-padding:30px;
-
+    flex:1;
+    padding:30px;
 }
 
+
+
+/* Topbar */
 
 
 .topbar{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-margin-bottom:30px;
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
 }
 
 
 
-/* Cards */
+/* Profile Buttons */
 
 
-.health-cards{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:20px;
-
-}
-
-
-
-.card{
-
-background:white;
-
-padding:25px;
-
-border-radius:20px;
-
-box-shadow:0 5px 20px #0001;
-
-}
-
-
-
-.card h1{
-
-font-size:40px;
-color:#2563eb;
-
-}
-
-
-
-
-/* Bottom */
-
-
-.dashboard-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:20px;
-
-margin-top:30px;
-
-}
-
-
-
-.box{
-
-background:white;
-
-padding:30px;
-
-border-radius:20px;
-
-box-shadow:0 5px 20px #0001;
-
-}
-
-
-
-.box li{
-
-margin:15px 0;
-
-list-style:none;
-
-}
 .profile{
     display:flex;
     align-items:center;
     gap:15px;
 }
+
 
 #themeToggle{
     background:#2563eb;
@@ -200,25 +119,271 @@ list-style:none;
     font-size:16px;
 }
 
+
 #themeToggle:hover{
     background:#1d4ed8;
 }
 
+
+.icon-btn{
+    background:transparent;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+    margin-left:10px;
+    color:#333;
+}
+
+
+.icon-btn:hover{
+    color:#007bff;
+}
+
+
+
+
+/* Health Cards */
+
+
+.health-cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px #0001;
+
+}
+
+
+.card h1{
+    font-size:40px;
+    color:#2563eb;
+}
+
+
+
+/* Bottom Sections */
+
+
+.dashboard-grid{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:30px;
+
+}
+
+
+
+.box{
+
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px #0001;
+
+}
+
+
+.box li{
+    margin:15px 0;
+    list-style:none;
+}
+
+
+
+/* Footer */
+
+
+.dashboard-footer{
+
+    text-align:center;
+    margin-top:30px;
+    padding:15px;
+    color:#777;
+    font-size:14px;
+
+}
+
+
+
+/* =====================
+   DARK MODE
+===================== */
+
+
 body.dark{
+
     background:#111827;
     color:white;
+
 }
+
 
 body.dark .card,
 body.dark .box{
+
     background:#1f2937;
     color:white;
+
 }
+
 
 body.dark .topbar{
+
     color:white;
+
 }
 
+
 body.dark .sidebar{
+
     background:#0f172a;
+
+}
+
+
+body.dark .icon-btn{
+
+    color:white;
+
+}
+
+
+
+
+/* =====================
+   SETTINGS PAGE
+===================== */
+
+
+.settings-container{
+
+    display:grid;
+    gap:20px;
+
+}
+
+
+
+.settings-container .box{
+
+    padding:25px;
+
+}
+
+
+
+.settings-container button{
+
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+
+}
+
+
+
+.settings-container button:hover{
+
+    opacity:0.8;
+
+}
+
+
+
+.danger-btn{
+
+    background:#dc2626 !important;
+
+}
+
+
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+
+
+@media(max-width:992px){
+
+
+    .dashboard-container{
+
+        flex-direction:column;
+
+    }
+
+
+    .sidebar{
+
+        width:100%;
+
+    }
+
+
+    .health-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .dashboard-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .health-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .topbar{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+
+    }
+
+
+    .sidebar ul{
+
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+
+    }
+
+
+    .sidebar li{
+
+        margin-bottom:0;
+
+    }
+
 }

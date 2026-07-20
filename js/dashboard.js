@@ -1,3 +1,4 @@
+console.log("Dashboard script loaded.");
 // Profile
 const profile = JSON.parse(localStorage.getItem("healthProfile"));
 
@@ -87,6 +88,36 @@ themeButton.addEventListener("click", () => {
     }else{
         localStorage.setItem("theme","light");
         themeButton.textContent = "🌙";
+    }
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    const deleteAccount = document.getElementById("deleteAccount");
+
+    if (deleteAccount) {
+
+        deleteAccount.addEventListener("click", function () {
+
+            let confirmDelete = confirm(
+                "Are you sure you want to delete your account? All health data will be removed."
+            );
+
+
+            if (confirmDelete) {
+
+                localStorage.clear();
+
+                alert(
+                    "Your account data has been deleted successfully."
+                );
+
+                window.location.href = "dashboard.html";
+
+            }
+
+        });
+
     }
 
 });
